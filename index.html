@@ -6,56 +6,61 @@
 <title>Cake Heaven - Sylhet Cake Store</title>
 <style>
 body {font-family:'Arial', sans-serif; background-color:#fff0f6; margin:0; padding:0; color:#4a2c58;}
-header {display:flex; align-items:center; justify-content:center; gap:15px; background-color:#7b2cbf; color:white; padding:15px 0;}
-header img {height:50px;}
-header span {font-size:2rem; font-weight:bold;}
+header {background-color:#a14cac; color:white; text-align:center; padding:20px 0;}
+header img {height:80px; margin-bottom:10px;}
+header h1 {margin:0; font-size:2.5rem; letter-spacing:2px;}
 main {padding:20px; max-width:1000px; margin:0 auto;}
 .intro {text-align:center; margin-bottom:40px; font-size:1.2rem;}
 .cake-gallery {display:flex; flex-wrap:wrap; gap:25px; justify-content:center;}
-.cake-card {background:white; border-radius:12px; box-shadow:0 10px 25px rgba(0,0,0,0.12); max-width:300px; text-align:center; transition:transform 0.3s ease; overflow:hidden;}
+.cake-card {background:white; border-radius:8px; box-shadow:0 2px 8px rgba(161,76,172,0.2); max-width:300px; text-align:center; transition:transform 0.3s ease; overflow:hidden;}
 .cake-card:hover {transform:scale(1.05);}
 .cake-card img {width:100%; height:auto; display:block;}
 .cake-description {padding:15px; font-weight:600; font-size:1rem; background-color:#fce4f3; color:#7f368f;}
-footer {margin-top:40px; padding:15px 0; background-color:#7b2cbf; color:white; text-align:center; font-size:0.9rem;}
-@media (max-width:600px) {.cake-gallery {flex-direction:column; align-items:center;}}
+.order-btn {display:block; margin:10px auto 20px; padding:10px 15px; background-color:#a14cac; color:white; border:none; border-radius:5px; text-decoration:none; font-weight:bold; transition:0.3s;}
+.order-btn:hover {background-color:#7f368f;}
+.map {margin:40px 0; text-align:center;}
+footer {margin-top:40px; padding:15px 0; background-color:#a14cac; color:white; text-align:center; font-size:0.9rem;}
+@media (max-width:600px){.cake-gallery{flex-direction:column; align-items:center;}}
 </style>
 </head>
 <body>
 <header>
 <img src="logo.png" alt="Cake Heaven Logo">
-<span>Cake Heaven</span>
+<h1>Cake Heaven</h1>
 </header>
 
 <main>
 <section class="intro">
-<p>Welcome to Cake Heaven! We are proud to be located in Sylhet. Explore our beautiful cakes for all your special occasions.</p>
+<p>Welcome to Cake Heaven! Proudly located in Sylhet. Explore our beautiful cakes for all occasions and order instantly via WhatsApp!</p>
 </section>
 
 <section class="cake-gallery">
+<!-- Cake 1 -->
 <div class="cake-card">
-<img src="cake1.jpg" alt="Chocolate Cake">
-<div class="cake-description">Chocolate Cake for Friends</div>
-<a href="https://wa.me/8801764205629?text=Hi%20Cake%20Heaven,%20I%20want%20to%20order%20this%20cake" target="_blank" style="display:inline-block; margin:10px 0; padding:8px 16px; background:#7b2cbf; color:white; border-radius:20px; text-decoration:none; font-size:14px;">Order This Cake</a>
+<img src="cake1.jpg" alt="Purple Flowered Cake"/>
+<div class="cake-description">Purple Flowered Cake for Friends Foundation Event</div>
+<a href="https://wa.me/8801XXXXXXXXX?text=Hello%20Cake%20Heaven,%20I%20want%20to%20order%20the%20Purple%20Flowered%20Cake" target="_blank" class="order-btn">Order on WhatsApp</a>
 </div>
 
+<!-- Cake 2 -->
 <div class="cake-card">
-<img src="cake2.jpg" alt="Birthday Cake">
-<div class="cake-description">1st Anniversary Cake with Flowers</div>
-<a href="https://wa.me/8801XXXXXXXXX?text=Hi%20Cake%20Heaven,%20I%20want%20to%20order%20this%20cake" target="_blank" style="display:inline-block; margin:10px 0; padding:8px 16px; background:#7b2cbf; color:white; border-radius:20px; text-decoration:none; font-size:14px;">Order This Cake</a>
+<img src="cake2.jpg" alt="1st Anniversary Cake"/>
+<div class="cake-description">1st Anniversary Cake with floral decorations</div>
+<a href="https://wa.me/8801XXXXXXXXX?text=Hello%20Cake%20Heaven,%20I%20want%20to%20order%20the%201st%20Anniversary%20Cake" target="_blank" class="order-btn">Order on WhatsApp</a>
 </div>
 
-<!-- Copy more cake-card divs to add more cakes -->
+<!-- Cake 3 (optional, add more as needed) -->
+<!-- <div class="cake-card">
+<img src="cake3.jpg" alt="Another Cake"/>
+<div class="cake-description">Custom Cake Description</div>
+<a href="https://wa.me/8801XXXXXXXXX?text=Hello%20Cake%20Heaven,%20I%20want%20to%20order%20this%20cake" target="_blank" class="order-btn">Order on WhatsApp</a>
+</div> -->
 </section>
 
-<section style="text-align:center; margin:40px 0;">
-<a href="https://wa.me/8801764205629?text=Hi%20Cake%20Heaven,%20I%20want%20to%20place%20an%20order" target="_blank" style="background:#25D366; color:white; padding:15px 30px; font-size:18px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block;">📞 Order on WhatsApp</a>
+<section class="map">
+<h2>Visit Us in Sylhet</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.123456789!2d91.867!3d24.894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375058f123456789%3A0xabcdef1234567890!2sSylhet!5e0!3m2!1sen!2sbd!4v1699999999999" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </section>
-
-<section style="text-align:center; margin:40px 0;">
-<h3>Our Location in Sylhet</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0000000!2d91.8000000!3d24.9000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374xxxxxxx%3A0xabcdef123456!2sSylhet!5e0!3m2!1sen!2sbd!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
 </main>
 
 <footer>
