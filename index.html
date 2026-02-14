@@ -1,70 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Cake Heaven - Sylhet Cake Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Heaven | Sylhet</title>
+
+<!-- Bangla Font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+
 <style>
-body {font-family:'Arial', sans-serif; background-color:#fff0f6; margin:0; padding:0; color:#4a2c58;}
-header {background-color:#a14cac; color:white; text-align:center; padding:20px 0;}
-header img {height:80px; margin-bottom:10px;}
-header h1 {margin:0; font-size:2.5rem; letter-spacing:2px;}
-main {padding:20px; max-width:1000px; margin:0 auto;}
-.intro {text-align:center; margin-bottom:40px; font-size:1.2rem;}
-.cake-gallery {display:flex; flex-wrap:wrap; gap:25px; justify-content:center;}
-.cake-card {background:white; border-radius:8px; box-shadow:0 2px 8px rgba(161,76,172,0.2); max-width:300px; text-align:center; transition:transform 0.3s ease; overflow:hidden;}
-.cake-card:hover {transform:scale(1.05);}
-.cake-card img {width:100%; height:auto; display:block;}
-.cake-description {padding:15px; font-weight:600; font-size:1rem; background-color:#fce4f3; color:#7f368f;}
-.order-btn {display:block; margin:10px auto 20px; padding:10px 15px; background-color:#a14cac; color:white; border:none; border-radius:5px; text-decoration:none; font-weight:bold; transition:0.3s;}
-.order-btn:hover {background-color:#7f368f;}
-.map {margin:40px 0; text-align:center;}
-footer {margin-top:40px; padding:15px 0; background-color:#a14cac; color:white; text-align:center; font-size:0.9rem;}
-@media (max-width:600px){.cake-gallery{flex-direction:column; align-items:center;}}
+body{
+   <style>
+@font-face {
+    font-family: 'HindSiliguri';
+    src: url('HindSiliguri-Medium.ttf') format('truetype');
+}
+
+body{
+    font-family: 'HindSiliguri', Arial, sans-serif;
+}
+</style>
+
+
+header{
+    background:#6b2e7c;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+header img{
+    height:80px;
+    display:block;
+    margin:0 auto 5px;
+}
+
+section{
+    padding:30px 15px;
+    text-align:center;
+}
+
+h2{
+    color:#6b2e7c;
+}
+
+/* Cake Cards */
+.cake-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.cake-card{
+    width:260px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.cake-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.cake-card h3{
+    margin:10px 0 5px;
+}
+
+.cake-card p{
+    font-size:14px;
+    color:#555;
+}
+
+.order-btn{
+    display:inline-block;
+    margin:10px 0 15px;
+    padding:8px 16px;
+    background:#6b2e7c;
+    color:white;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* Review */
+.review-box input, .review-box textarea{
+    width:90%;
+    padding:8px;
+    margin:5px 0;
+}
+
+footer{
+    background:#6b2e7c;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<img src="logo.png" alt="Cake Heaven Logo">
-<h1>Cake Heaven</h1>
+    <img src="logo.png" alt="Cake Heaven">
+    <h1>Cake Heaven</h1>
+    <p>সিলেটের বিশ্বস্ত কেক শপ</p>
 </header>
 
-<main>
-<section class="intro">
-<p>Welcome to Cake Heaven! Proudly located in Sylhet. Explore our beautiful cakes for all occasions and order instantly via WhatsApp!</p>
+<section>
+<p>আপনার জন্মদিন, বিয়ে, এনিভার্সারি ও সব বিশেষ অনুষ্ঠানের জন্য অর্ডার করুন সুন্দর ও সুস্বাদু কেক।</p>
 </section>
 
-<section class="cake-gallery">
-<!-- Cake 1 -->
-<div class="cake-card">
-<img src="cake1.jpg" alt="Purple Flowered Cake"/>
-<div class="cake-description">Purple Flowered Cake for Friends Foundation Event</div>
-<a href="https://wa.me/8801XXXXXXXXX?text=Hello%20Cake%20Heaven,%20I%20want%20to%20order%20the%20Purple%20Flowered%20Cake" target="_blank" class="order-btn">Order on WhatsApp</a>
+<section>
+<h2>🍰 আমাদের কেক সমূহ</h2>
+
+<div class="cake-gallery">
+  <div class="cake-card">
+    <img src="cake1.jpg">
+    <h3 class="cake-name"></h3>
+    <p>সব অনুষ্ঠানের জন্য উপযুক্ত</p>
+    <a class="order-btn" href="https://wa.me/8801764205629">WhatsApp Order</a>
+  </div>
+
+  <div class="cake-card">
+    <img src="cake2.jpg">
+    <h3 class="cake-name"></h3>
+    <p>প্রিমিয়াম ডিজাইন ও স্বাদ</p>
+    <a class="order-btn" href="https://wa.me/8801764205629">WhatsApp Order</a>
+  </div>
+
+  <div class="cake-card">
+    <img src="cake3.jpg">
+    <h3 class="cake-name"></h3>
+    <p>Birthday & Anniversary Special</p>
+    <a class="order-btn" href="https://wa.me/8801764205629">WhatsApp Order</a>
+  </div>
+</div> class="cake-card">
+    <img src="cake4.jpg">
+    <h3 class="cake-name"></h3>
+    <p> Anniversary Special</p>
+    <a class="order-btn" href="https://wa.me/8801764205629">WhatsApp Order</a>
+  </div>
+  <div class="cake-card">
+    <img src="cake5.jpg">
+    <h3 class="cake-name"></h3>
+    <p>Birthday Special</p>
+    <a class="order-btn" href="https://wa.me/8801764205629">WhatsApp Order</a>
+  </div>
+</section>
+
+<section>
+<h2>⭐ গ্রাহকদের মতামত</h2>
+<div class="review-box">
+<input type="text" placeholder="আপনার নাম">
+<textarea placeholder="আপনার মতামত লিখুন"></textarea>
 </div>
-
-<!-- Cake 2 -->
-<div class="cake-card">
-<img src="cake2.jpg" alt="1st Anniversary Cake"/>
-<div class="cake-description">1st Anniversary Cake with floral decorations</div>
-<a href="https://wa.me/8801XXXXXXXXX?text=Hello%20Cake%20Heaven,%20I%20want%20to%20order%20the%201st%20Anniversary%20Cake" target="_blank" class="order-btn">Order on WhatsApp</a>
-</div>
-
-<!-- Cake 3 (optional, add more as needed) -->
-<!-- <div class="cake-card">
-<img src="cake3.jpg" alt="Another Cake"/>
-<div class="cake-description">Custom Cake Description</div>
-<a href="https://wa.me/8801XXXXXXXXX?text=Hello%20Cake%20Heaven,%20I%20want%20to%20order%20this%20cake" target="_blank" class="order-btn">Order on WhatsApp</a>
-</div> -->
 </section>
-
-<section class="map">
-<h2>Visit Us in Sylhet</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.123456789!2d91.867!3d24.894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375058f123456789%3A0xabcdef1234567890!2sSylhet!5e0!3m2!1sen!2sbd!4v1699999999999" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</section>
-</main>
 
 <footer>
-&copy; 2024 Cake Heaven | Located in Sylhet | Contact: info@cakeheaven.com
+<p>📍 Sylhet, Bangladesh</p>
+<a href="https://www.facebook.com/cake heaven target="_blank" style="color:white;">Facebook Page</a>
 </footer>
+
+<!-- RANDOM CAKE NAME SCRIPT -->
+<script>
+const cakeNames = [
+"Golden Bliss Cake",
+"Royal Delight",
+"Velvet Dream",
+"Classic Heaven",
+"Signature Treat",
+"Celebration Special",
+"Sweet Blossom",
+"Happy Moments Cake",
+"মিষ্টি মুহূর্ত কেক",
+"আনন্দ উৎসব কেক",
+"স্বপ্নের কেক",
+"ভালোবাসার কেক"
+];
+
+document.querySelectorAll(".cake-name").forEach(el=>{
+  el.innerText = cakeNames[Math.floor(Math.random()*cakeNames.length)];
+});
+</script>
+
 </body>
 </html>
